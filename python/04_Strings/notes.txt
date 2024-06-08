@@ -1,0 +1,134 @@
+Strings
+
+>>> chai = "chai"
+>>> chai
+'chai'
+>>> first_elem = chai[0]
+>>> first_elem
+'c'
+
+>>> num_list = "0123456789"
+>>> num_list[:]
+'0123456789'
+>>> num_list[0:]
+'0123456789'
+>>> num_list[0:9]
+'012345678'
+>>> num_list[0:10:2]
+'02468'
+
+
+>>> chai = "masala chai"
+>>> print(chai.lower())
+masala chai
+>>> print(chai.upper())
+MASALA CHAI
+
+>>> chai = "                    masala chai    "
+'\t\t\tmasala chai    '
+>>> print(chai.strip()) // removes spaces
+masala chai
+>>> chai = "masala chai"
+>>> print(chai.lower())
+masala chai
+>>> print(chai.upper())
+MASALA CHAI
+
+
+>>> print(chai.replace("Lemon","Ginger"))
+                        masala chai    
+>>> print(chai.replace("Masala","Ginger"))
+                        masala chai    
+>>> print(chai.replace("Masala","Ginger"))
+                        masala chai    
+>>> print(chai.replace("masala","Ginger"))
+                        Ginger chai   
+
+
+>>> chai = "Lemon,Ginger,Masala,Mint"
+>>> print(chai.split(", "))
+['Lemon,Ginger,Masala,Mint']
+>>> print(chai.split(","))
+['Lemon', 'Ginger', 'Masala', 'Mint']
+
+
+>>> chai = "Masala Chai"
+>>> print(chai.find("Chai"))
+7
+
+
+
+
+>>> chai_type = "Masala Chai"
+>>> quantity = 2
+>>> order = "I ordered {}cups of {} chai"
+>>> order
+'I ordered {}cups of {} chai'
+
+
+
+>>> chai_type = "Masala Chai"
+>>> quantity = 2
+>>> order = "I ordered {}cups of {} chai"
+>>> order
+'I ordered {}cups of {} chai'
+>>> print(order.format(quantity,chai_type))
+I ordered 2cups of Masala Chai chai
+
+
+>>> chai = "Masala Chai"
+>>> chai
+'Masala Chai'
+>>> print(len(chai))
+11
+
+>>> for letter in chai:
+...     print(letter)
+... 
+M
+a
+s
+a
+l
+a
+
+
+>>> chai = "He said, \"Masala Chai is awsome\" "
+>>> chai
+'He said, "Masala Chai is awsome" '
+
+ 
+C
+h
+a
+i
+
+
+>>> chai = r"Masala\nChai"
+>>> chai
+'Masala\\nChai'
+>>> chai = "Masala\nChai"
+>>> chai
+'Masala\nChai'
+
+
+>>> chai = r"c:\user\pwd"
+>>> chai
+'c:\\user\\pwd'
+>>> print(chai)
+c:\user\pwd
+>>> chai = "c:\user\pwd"
+  File "<stdin>", line 1
+    chai = "c:\user\pwd"
+           ^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \uXXXX escape
+>>> chai = "c:\\user\\pwd"
+>>> chai
+'c:\\user\\pwd'
+>>> print(chai)
+c:\user\pwd
+
+
+>>> chai = "Masala Chai"
+>>> print("Masala" in chai)
+True

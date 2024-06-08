@@ -1,0 +1,64 @@
+>>> tea_veriety = ["Black","White","Herbal","Oolong"]
+>>> tea_veriety[1:2]
+['White']
+>>> tea_veriety[1:2] = "Lemon"
+>>> tea_veriety
+['Black', 'L', 'e', 'm', 'o', 'n', 'Herbal', 'Oolong']
+>>> tea_veriety = ["Black","White","Herbal","Oolong"]
+>>> tea_veriety[1:2] = ["Lemon"]
+>>> tea_veriety
+['Black', 'Lemon', 'Herbal', 'Oolong']
+
+
+>>> tea_veriety
+['Black', 'Lemon', 'Herbal', 'Oolong']
+>>> tea_veriety = ["Black","White","Herbal","Oolong"]
+>>> tea_veriety[1:1] 
+[]
+>>> tea_veriety[1:1] = ["test"]
+>>> tea_veriety
+['Black', 'test', 'White', 'Herbal', 'Oolong']
+>>> tea_veriety[1:2] = []
+>>> tea_veriety
+['Black', 'White', 'Herbal', 'Oolong']
+
+
+
+>>> for tea in tea_veriety:
+...     print(tea,end="-")
+Black-White-Herbal-Oolong
+
+
+>>> tea_veriety.append("chai")
+>>> tea_veriety
+['Black', 'White', 'Herbal', 'Oolong', 'chai']
+
+>>> tea_veriety
+['Black', 'White', 'Herbal', 'Oolong', 'chai']
+>>> tea_veriety.pop()
+'chai'
+>>> tea_veriety
+['Black', 'White', 'Herbal', 'Oolong']
+
+
+>>> tea_veriety
+['Black', 'White', 'Herbal', 'Oolong']
+>>> tea_veriety.remove("White")
+>>> tea_veriety
+['Black', 'Herbal', 'Oolong']
+
+>>> tea_veriety
+['Black', 'Herbal', 'Oolong']
+>>> tea_veriety.insert(1,"Soup")
+>>> tea_veriety
+['Black', 'Soup', 'Herbal', 'Oolong']
+
+>>> tea_veriety_copy = tea_veriety.copy() // to create a another object of existing object 
+>>> tea_veriety_copy
+['Black', 'Soup', 'Herbal', 'Oolong']
+
+// List Comprehension
+
+>>> sqrt = [x**2 for x in range(10)]
+>>> sqrt
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]

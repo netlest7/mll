@@ -1,0 +1,30 @@
+PYTHON is a Interpreted Language.
+Initially python code is converted to bytecode(not the java bytecode) , which is mostly hidden.
+
+Then these bytecode is send to Python Virtual Machine for execution.
+
+1. Compile to bytecode
+    bytecode is a low level code (not machine code, machine code are the direct instructions for hardware) and platform independent.
+    bytecode runs faster.
+    .pyc -> compiled python(also called frozen binaries)
+
+
+    __pycache__ -> to organize the frozen binaries
+
+    hello_chai.cpython-312.pyc  -> cpython is a standart python version to build the pyc
+
+    pyc files are only created on :
+    -> works only for imported files
+    -> not for top level files.
+
+
+
+
+2. PYTHON VIRTUAL MACHINE (Run time engine)
+
+ -> In pvm a code loop is continuously execution as we feed files to them it executes the code.
+ -> PVM also accepts python scripts along with bytecode.
+ BYTE CODE is not a machine code it is a python specific interpretation.
+ -> cpython,jython,IronPython ,stackless -> python version
+
+
